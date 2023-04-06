@@ -390,8 +390,8 @@ def setup_comet():
             # Create an experiment with your api key
             experiment = Experiment(
                 api_key=os.environ["COMET_API_KEY"],
-                project_name="clip-italian",
-                workspace="g8a9",
+                project_name="clip",
+                workspace="pain",
                 log_code=True,
                 log_graph=False,
             )
