@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPT_DIR=.
-MODEL_DIR=modelallcaptions
+MODEL_DIR=model_allcaption
 
 IMAGE_ENCODER="openai/clip-vit-base-patch32"
 TEXT_ENCODER="aubmindlab/bert-large-arabertv2"
@@ -9,7 +9,6 @@ TEXT_ENCODER="aubmindlab/bert-large-arabertv2"
 
 python ${SCRIPT_DIR}/run_hybrid_clip.py \
     --output_dir ${MODEL_DIR} \
-    --overwrite_output_dir \
     --tokenizer_name=${TEXT_ENCODER} \
     --train_file="/home/think3/Desktop/training_CLIP/MSCOCO_DATASET_AR_1/train_dataset.json" \
     --validation_file="/home/think3/Desktop/training_CLIP/MSCOCO_DATASET_AR_1/valid_dataset.json" \
@@ -23,5 +22,5 @@ python ${SCRIPT_DIR}/run_hybrid_clip.py \
     --eval_when 5 \
     --text_model_name_or_path=${TEXT_ENCODER} \
     --vision_model_name_or_path=${IMAGE_ENCODER} \
-    --run_from_checkpoint /home/think3/Desktop/training_CLIP/model1
+    --run_from_checkpoint /home/think3/Desktop/training_CLIP/model_allcaptions/
 
