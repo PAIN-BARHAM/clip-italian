@@ -5,6 +5,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
 # C extensions
 *.so
 
@@ -138,3 +139,18 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+
+# images 
+
+*.jpg
+
+evaluation/photos/*
+evaluation/photos/*
+/home/think3/Desktop/training_CLIP/clip-italian/evaluation/photos2/*
+
+*.pkl
+
+*.zip
+
+*.json
